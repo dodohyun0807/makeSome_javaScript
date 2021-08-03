@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <script src="date.js" defer></script>
+    <script src="todo.js" defer></script>
+    <script src="weather.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <button class="btn">
+        <img src="icons/clipboard-regular.svg" />
+      </button>
+      <button class="btn">
+        <img src="icons/clock-regular.svg" />
+      </button>
+      <button class="btn">
+        <img src="icons/cloud-sun-solid.svg" />
+      </button>
+    </nav>
+
+    <main class="main">
+      <section class="todo">
+        <h1>TO DO LIST</h1>
+        <input type="text" id="input" />
+        <button type="button" id="todo_btn">입력</button>
+        <ul id="todo_list">
+          <li></li>
+        </ul>
+      </section>
+
+      <section class="time">
+        <div class="">
+          <h1 id="clock"></h1>
+        </div>
+      </section>
+
+      <section class="weather">
+        <span class="js-weather"></span>
+      </section>
+    </main>
+  </body>
+</html>
